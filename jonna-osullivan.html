@@ -631,19 +631,19 @@
             <div class="card-body">
               <div class="section-label">Bundle Quantities</div>
               <div class="hw-grid">
-                <div class="hw-item"><div class="hw-item-name">Register Station</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-register" value="0" min="0" /></div><span class="hw-price">× $982 each</span></div></div>
-                <div class="hw-item"><div class="hw-item-name">Kiosk Station</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-kiosk" value="0" min="0" /></div><span class="hw-price">× $662 each</span></div></div>
-                <div class="hw-item"><div class="hw-item-name">Handheld</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-handheld" value="0" min="0" /></div><span class="hw-price">× $398 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">Register Station</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-register" value="0" min="0" /></div><span class="hw-price">× $847 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">Kiosk Station</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-kiosk" value="0" min="0" /></div><span class="hw-price">× $847 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">Handheld</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-handheld" value="0" min="0" /></div><span class="hw-price">× $348 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Ticket / KDS Station</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hw-ticket" value="0" min="0" /></div><span class="hw-price">× $388 each</span></div></div>
               </div>
               <div class="section-label" style="margin-top:20px;">Additional Units</div>
               <div class="hw-grid">
-                <div class="hw-item"><div class="hw-item-name">iPad 11th Gen</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-ipad" value="0" min="0" /></div><span class="hw-price">× $349 each</span></div></div>
-                <div class="hw-item"><div class="hw-item-name">Stripe S700 - Reader</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-s700-reader" value="0" min="0" /></div><span class="hw-price">× $349 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">iPad 11th Gen</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-ipad" value="0" min="0" /></div><span class="hw-price">× $299 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">Stripe S700 - Reader</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-s700-reader" value="0" min="0" /></div><span class="hw-price">× $299 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Stripe S700 - Dock</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-s700-dock" value="0" min="0" /></div><span class="hw-price">× $49 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Stripe S700 - Case</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-s700-case" value="0" min="0" /></div><span class="hw-price">× $19 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">KDS Stand</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-kds-stand" value="0" min="0" /></div><span class="hw-price">× $39 each</span></div></div>
-                <div class="hw-item"><div class="hw-item-name">Register Stand</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-reg-stand" value="0" min="0" /></div><span class="hw-price">× $235 each</span></div></div>
+                <div class="hw-item"><div class="hw-item-name">Register Stand</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-reg-stand" value="0" min="0" /></div><span class="hw-price">× $150 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Handheld Case</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-handheld-case" value="0" min="0" /></div><span class="hw-price">× $39 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Epson Printer TM-M30III</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-printer-m30" value="0" min="0" /></div><span class="hw-price">× $249 each</span></div></div>
                 <div class="hw-item"><div class="hw-item-name">Epson Printer TM-L100</div><div class="hw-item-row"><div class="input-group hw-qty"><input type="number" id="hu-printer-l100" value="0" min="0" /></div><span class="hw-price">× $449 each</span></div></div>
@@ -1036,8 +1036,8 @@
     // ─────────────────────────────────────────
     function gv(id) { const el = document.getElementById(id); return el ? (parseFloat(el.value) || 0) : 0; }
     function sv(id) { const el = document.getElementById(id); return el ? el.value.trim() : ''; }
-    const HW_PRICES = { register:982, kiosk:662, handheld:398, ticket:388 };
-      const HU_PRICES = { ipad:349, s700_reader:349, s700_dock:49, s700_case:19, kds_stand:39, reg_stand:235, handheld_case:39, printer_m30:249, printer_l100:449, cash_drawer:65, barcode:70 };
+    const HW_PRICES = { register:847, kiosk:847, handheld:348, ticket:388 };
+      const HU_PRICES = { ipad:349, s700_reader:299, s700_dock:49, s700_case:19, kds_stand:39, reg_stand:150, handheld_case:39, printer_m30:249, printer_l100:449, cash_drawer:65, barcode:70 };
 
     function autoFillBookkeepingTax() {
       const vol = parseFloat(document.getElementById('annual-volume').value) || 0;
