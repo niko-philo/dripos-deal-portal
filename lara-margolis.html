@@ -1042,10 +1042,11 @@
     function autoFillBookkeepingTax() {
       const vol = parseFloat(document.getElementById('annual-volume').value) || 0;
       let bk = 0, tax = 0;
-      if (vol <= 240000)           { bk = 200;  tax = 800;  }
-      else if (vol <= 600000)      { bk = 300;  tax = 1000; }
-      else if (vol <= 1200000)     { bk = 400;  tax = 1300; }
-      else                         { bk = 600;  tax = 1700; }
+      bk = 250;
+      if (vol <= 240000)           { tax = 800;  }
+      else if (vol <= 600000)      { tax = 1000; }
+      else if (vol <= 1200000)     { tax = 1300; }
+      else                         { tax = 1700; }
       const bkEl  = document.getElementById('drip-bookkeeping');
       const taxEl = document.getElementById('drip-taxfiling');
       if (bkEl)  bkEl.value  = bk;

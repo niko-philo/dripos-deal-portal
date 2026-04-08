@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dripos Deal Portal — Evan Duffy</title>
+  <title>Dripos Deal Portal — Niko Philosophos</title>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -348,7 +348,7 @@
       <div class="nav-divider"></div>
       <div class="nav-portal-name">Deal Portal</div>
     </div>
-    <div class="nav-rep">Evan Duffy</div>
+    <div class="nav-rep">Niko Philosophos</div>
   </nav>
 
   <!-- TABS -->
@@ -820,7 +820,7 @@
     // ─────────────────────────────────────────
     // STORAGE KEY (unique per rep)
     // ─────────────────────────────────────────
-    const STORAGE_KEY = 'dripos_deals_evan_duffy';
+    const STORAGE_KEY = 'dripos_deals_niko_philosophos';
     let deals = {};          // { id: dealObject }
     let activeDealId = null;
 
@@ -1042,10 +1042,11 @@
     function autoFillBookkeepingTax() {
       const vol = parseFloat(document.getElementById('annual-volume').value) || 0;
       let bk = 0, tax = 0;
-      if (vol <= 240000)           { bk = 200;  tax = 800;  }
-      else if (vol <= 600000)      { bk = 300;  tax = 1000; }
-      else if (vol <= 1200000)     { bk = 400;  tax = 1300; }
-      else                         { bk = 600;  tax = 1700; }
+      bk = 250;
+      if (vol <= 240000)           { tax = 800;  }
+      else if (vol <= 600000)      { tax = 1000; }
+      else if (vol <= 1200000)     { tax = 1300; }
+      else                         { tax = 1700; }
       const bkEl  = document.getElementById('drip-bookkeeping');
       const taxEl = document.getElementById('drip-taxfiling');
       if (bkEl)  bkEl.value  = bk;
